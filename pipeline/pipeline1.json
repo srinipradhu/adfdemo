@@ -15,7 +15,17 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableLogging": true
+					"dataset": {
+						"referenceName": "Binary1",
+						"type": "DatasetReference"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureFileStorageReadSettings",
+						"recursive": true,
+						"wildcardFileName": "*",
+						"enablePartitionDiscovery": false
+					}
 				}
 			}
 		],
